@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro passos com DOM</title>
+
+    <!--Style CSS-->
+    <style>
+        body {
+           background-color:rgb(64, 81, 136);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <!--Declarando HTML-->
+    <!--DOM Document Object Model são conjunto de objeto dentro dos navegadores -->
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar <strong> DOM </strong> em javaScript</p>
+    <div>Clique em mim</div>
+   <!--Script JS-->
+    <script>
+        /*getElementByTagName buscar os paragrafos selecionado*/
+        /*var p1= window.document.getElementsByTagName('P')[0]*/
+        /*window.document.write('Esta escrito assim: ' + p1.innerHTML)*/
+
+        /*Mudando a cor do paragrafo style.color*/
+        var p1= window.document.getElementsByTagName('P')[0]
+        p1.style.color = 'blue'
+
+    </script>
+</body>
+</html>
