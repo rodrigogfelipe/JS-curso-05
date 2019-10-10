@@ -23,16 +23,22 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Apredendo a usar <strong> DOM </strong> em javaScript</p>
-    <div>Clique em mim</div>
+    <div id= 'msg'> Clique em mim</div>
    <!--Script JS-->
     <script>
-        /*getElementByTagName buscar os paragrafos selecionado*/
+        /*getElementByTagName buscar os paragrafos selecionado P na posição 0*/
         /*var p1= window.document.getElementsByTagName('P')[0]*/
         /*window.document.write('Esta escrito assim: ' + p1.innerHTML)*/
 
-        /*Mudando a cor do paragrafo style.color*/
+       /* var d= window.document.getElementById('msg') // getElementById emitindo a mgs da div id
+        d.style.background= 'green' // style.background deixar green */
+
+        var d= window.document.querySelector('div#msg') //Toda DIV ID tem que ser representado por #. DIV Class tem que ser representado por ponto
+        d.style.background= 'blue' // DIV MGS ficara azul
+
+        /*Mudando a cor do paragrafo style.color
         var p1= window.document.getElementsByTagName('P')[0]
-        p1.style.color = 'blue'
+        p1.style.color = 'blue' */
 
     </script>
 </body>
